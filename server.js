@@ -32,7 +32,7 @@ app.use(notFound);
 
 app.use(errorHandler);
 
-const server = app.listen(PORT, async () => {
+const server = app.listen(PORT,"0.0.0.0", async () => {
   try {
     await connection;
     console.log(
